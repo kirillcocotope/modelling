@@ -16,3 +16,10 @@ import config from './next.config'
         "displayName": "MUON",
         "fraction": 1000000
       },
+
+    /* Handle image imports
+        https://jestjs.io/docs/webpack#handling-static-assets */
+    '^.+\\.(jpg|jpeg|png|gif|webp)$': '<rootDir>/__mocks__/fileMock.ts',
+
+    //Handle module aliases
+    '^@/c
