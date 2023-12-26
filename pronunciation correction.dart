@@ -19,9 +19,9 @@ export 'src/generated/pylons/trade.pb.dart';
           {
             checkError(
                 Strings.ERR_NODE,
-                response,
+   //             response,
                 NodeInternalErrorException(
-                    int.parse(response.value2[1]),
+   //                 int.parse(response.value2[1]),
                     response.value2[2],
                     'Node threw an unexpected error! Debug this!'));
             break;
